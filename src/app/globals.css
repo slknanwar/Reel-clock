@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme (default) */
+    --background: 220 25% 97%; /* Very light cool gray for app background */
+    --foreground: 220 15% 20%; /* Dark grayish blue for text */
+
+    --card: 0 0% 100%; /* White for card backgrounds */
+    --card-foreground: 220 15% 20%; /* Dark grayish blue for text on cards */
+
+    --popover: 0 0% 100%; 
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 220 15% 30%; /* Dark grayish blue for reel background */
+    --primary-foreground: 0 0% 98%; /* Almost white for digits on reel */
+
+    --secondary: 220 20% 90%; /* Light gray for secondary elements */
+    --secondary-foreground: 220 15% 35%; /* Medium-dark gray for text on secondary */
+
+    --muted: 220 20% 94%; /* Very light gray for muted backgrounds */
+    --muted-foreground: 220 10% 50%; /* Medium gray for muted text */
+
+    --accent: 220 15% 55%; /* Medium blue-gray for highlight circle */
+    --accent-foreground: 0 0% 98%; /* Almost white for text on accent */
+
+    --destructive: 0 84.2% 60.2%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 98%; /* Almost white for text on destructive */
+
+    --border: 220 14% 96%; /* Example HSL value, adjust as needed */
+    --input: 220 15% 85%; /* Light gray for input backgrounds */
+    --ring: 220 15% 55%; /* Medium blue-gray for focus rings */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables - light theme */
+    --sidebar-background: 220 20% 94%; 
+    --sidebar-foreground: 220 15% 25%; 
+    --sidebar-primary: 220 15% 55%; 
+    --sidebar-primary-foreground: 0 0% 98%; 
+    --sidebar-accent: 220 20% 88%;
+    --sidebar-accent-foreground: 220 15% 20%;
+    --sidebar-border: 220 15% 80%;
+    --sidebar-ring: 220 15% 55%;
+  }
+
+  .dark {
+    /* PRD Aligned Dark Theme */
+    --background: 216 6% 18%; /* Very dark blue-gray for app background */
+    --foreground: 0 0% 98%; /* Almost white text on dark background */
+
+    --card: 210 29% 24%; /* Dark navy for reel background */
+    --card-foreground: 0 0% 98%; /* Almost white for digits on reel */
+
+    --popover: 210 29% 20%; 
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 29% 24%; /* Dark navy for reel background */
+    --primary-foreground: 0 0% 98%; /* Almost white for digits on reel */
+
+    --secondary: 216 6% 22%; 
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 216 6% 25%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 173 58% 39%; /* Teal for highlight circle */
+    --accent-foreground: 0 0% 98%; /* Almost white for text on accent */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 30%;
+    --input: 210 20% 30%;
+    --ring: 173 58% 39%; /* Teal for focus rings */
+    
+    /* Sidebar variables - dark theme */
+    --sidebar-background: 210 29% 18%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 173 58% 39%; 
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 29% 22%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 20% 28%;
+    --sidebar-ring: 173 58% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
